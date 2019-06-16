@@ -1,0 +1,72 @@
+{
+  "CreditRatings": [
+    {
+      "RatingId": 101,
+      "CompanyName": "Infosys",
+      "Rating": 3,
+      "id": 1
+    },
+    {
+      "RatingId": 102,
+      "CompanyName": "TCS",
+      "Rating": 2,
+      "id": 2
+    },
+    {
+      "RatingId": 103,
+      "CompanyName": "Satyam",
+      "Rating": 1,
+      "id": 3
+    },
+    {
+      "RatingId": 2,
+      "CompanyName": "AAA",
+      "Rating": "2",
+      "CompanyCity": "",
+      "CompanyCountry": "",
+      "id": 4
+    },
+    {
+      "RatingId": 2,
+      "CompanyName": "tcs",
+      "Rating": "2",
+      "CompanyCity": "",
+      "CompanyCountry": "",
+      "id": 5
+    },
+    {
+      "RatingId": 2,
+      "CompanyName": "tcs",
+      "Rating": "2",
+      "CompanyCity": "",
+      "CompanyCountry": "",
+      "id": 6
+    }
+  ],
+  "Companies": [
+    {
+      "Name": "Infosys",
+      "City": "Mumbai",
+      "Country": "India",
+	  "id" : 1
+    },
+    {
+      "Name": "TCS",
+      "City": "Pune",
+      "Country": "India",
+	  "id" : 2
+    },
+    {
+      "Name": "Satyam",
+      "City": "Bangalore",
+      "Country": "India",
+	  "id" : 3
+    },
+    {
+      "Name": "AAA",
+      "City": "Bangalore",
+      "Country": "India",
+	  "id" : 4
+    }
+  ]
+}

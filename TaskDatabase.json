@@ -1,0 +1,179 @@
+{
+  "Tasks": [
+    {
+      "Id": 1,
+      "Name": "SPDJVendor Data Load",
+      "Parameters": [
+        {
+          "IndexCodes": [ "MSGMUSDP", "MUFT", "MSMLPCP" ],
+          "FileType": "ADJ",
+          "LastProcessedId": 71616973,
+          "FileDate": "20160908",
+          "EffectiveDate": "20160909",
+          "NextTaskToExecute": "SPDJProFormaVendorDataLoad",
+          "IsNextTaskReadyToExecute": false,
+          "IsCurrentTaskReadyToExecute": true
+        }
+      ],
+      "Status": "SUCESS",
+      "Type": "SPDJ_ADJ_VendorDataLoad",
+      "IsActive": 0,
+      "DataReadiness": 1,
+      "CreatedDateTime": "2017-03-09 07:06:14.857",
+      "CreatedBy": "MSDOMAIN1RSathe",
+      "LastModifiedDateTime": "2017-03-09 07:14:38.530",
+      "LastModifiedBy": "null"
+    },
+    {
+      "Id": 2,
+      "Name": "SPDJProforma Vendor Data Load",
+      "Parameters": [
+        {
+          "IndexCodes": [ "MSGMUSDP", "MUFT", "MSMLPCP" ],
+          "FileType": "PRO",
+          "LastProcessedId": 71616973,
+          "FileDate": "20160908",
+          "EffectiveDate": "20160909",
+          "NextTaskToExecute": "SolactiveClosingVendorDataLoad",
+          "IsNextTaskReadyToExecute": false,
+          "IsCurrentTaskReadyToExecute": true
+        }
+      ],
+      "Status": "SUCESS",
+      "Type": "SPDJProFormaVendorDataLoad",
+      "IsActive": 1,
+      "DataReadiness": 1,
+      "CreatedDateTime": "2017-03-09 07:06:14.857",
+      "CreatedBy": "MSDOMAIN1RSathe",
+      "LastModifiedDateTime": "2017-03-09 07:14:38.530",
+      "LastModifiedBy": "null"
+    },
+     {
+      "Id": 3,
+      "Name": "SolactiveClosingFileDataLoad",
+      "Parameters": [
+        {
+          "IndexCodes": null,
+          "FileType": "CLOSING",
+          "LastProcessedId": 71616973,
+          "FileDate": "20160908",
+          "EffectiveDate": "20160909",
+          "NextTaskToExecute": "SolactiveOpeningFileVendorDataLoad",
+          "IsNextTaskReadyToExecute": false,
+          "IsCurrentTaskReadyToExecute": true
+        }
+      ],
+      "Status": "SUCESS",
+      "Type": "SolactiveClosingVendorDataLoad",
+      "IsActive": 1,
+      "DataReadiness": 1,
+      "CreatedDateTime": "2017-03-09 07:06:14.857",
+      "CreatedBy": "MSDOMAIN1RSathe",
+      "LastModifiedDateTime": "2017-03-09 07:14:38.530",
+      "LastModifiedBy": "null"
+    },
+	{
+      "Id": 4,
+      "Name": "SolactiveOpeningFileVendorDataLoad",
+      "Parameters": [
+        {
+          "IndexCodes": null,
+          "FileType": "CLOSING",
+          "LastProcessedId": 71616973,
+          "FileDate": "20160908",
+          "EffectiveDate": "20160909",
+          "NextTaskToExecute": "SPDJ_ADJ_VendorDataLoad",
+          "IsNextTaskReadyToExecute": false,
+          "IsCurrentTaskReadyToExecute": true
+        }
+      ],
+      "Status": "SUCESS",
+      "Type": "SolactiveOpeningFileVendorDataLoad",
+      "IsActive": 1,
+      "DataReadiness": 1,
+      "CreatedDateTime": "2017-03-09 07:06:14.857",
+      "CreatedBy": "MSDOMAIN1RSathe",
+      "LastModifiedDateTime": "2017-03-09 07:14:38.530",
+      "LastModifiedBy": "null"
+    }
+  ],
+  "TaskExecutions": [
+    {
+	 "Id": 1,
+	 "TaskId": 1,
+	 "Status": "COMPLETED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task SPDJ ADJ Task"
+    },
+	{
+	 "Id": 2,
+	 "TaskId": 2,
+	 "Status": "COMPLETED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task SPDJ PRO Task"
+    },
+	{
+	 "Id": 3,
+	 "TaskId": 3,
+	 "Status": "COMPLETED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task SPDJ Global Task"
+    },
+	{
+	 "Id": 4,
+	 "TaskId": 4,
+	 "Status": "COMPLETED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task Solactive opening Task"
+    },
+	{
+	 "Id": 5,
+	 "TaskId": 1,
+	 "Status": "COMPLETED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task SPDJ ADJ Task"
+    },
+	{    
+	 "Id": 6,
+	 "TaskId": 2,
+	 "Status": "COMPLETED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task SPDJ PRO Task"
+    },
+	{
+	 "Id": 7,
+	 "TaskId": 3,
+	 "Status": "COMPLETED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task SPDJ Global Task"
+    },
+	{
+	 "Id": 8,
+	 "TaskId": 4,
+	 "Status": "STARTED",
+	 "StartTime": "2017-04-19 14:38:01.330",
+	 "CompletedTime": "2017-04-19 15:00:01.330",
+	 "ExecutingAssembly": "MI.EDM.TaskLibrary.LoadReferenceData.PriceOwnership.SPDJPriceOwnershipTask, MI.EDM.TaskLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+	 "ExecutionReport": "[4/19/2017 2:38:01 PM] - Execution started for task Solactive opening Task"
+    }	
+  ]
+  "TaskLog": [
+  {
+  
+  }
+  ]
+  }
